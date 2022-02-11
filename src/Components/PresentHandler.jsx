@@ -9,7 +9,7 @@ function PresentHandler(props) {
                         {props.students.filter(item => item.isPresent===true).map((student)=>(
                             <div className="finalshow">
                                 <span>{student.name}</span><br/>
-                                <button className="togglebtn1" onClick={()=>props.toggleHandler(student.id)}>Ansent</button>
+                                <button className="togglebtn1" onClick={()=>props.toggleHandler(student.id)}>Absent</button>
                             </div>
                         ))}
                     </div>
